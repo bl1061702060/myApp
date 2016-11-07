@@ -1,0 +1,25 @@
+<ion-view view-title="Login">
+    <ion-content ng-controller="LoginCtrl" overflow-scroll="true" style="overflow:hidden;">
+        <div class="content has-header" style="padding: 60px 30px;">
+            <ion-list class="list-inset">
+                <div>
+                    <div class="h1 title assertive text-center">移动办公系统</div>
+                </div>
+                <div>
+                    <label class="item item-input">
+                        <input type="text" placeholder="{{login.lan.username}}" ng-model="username">
+                    </label>
+                    <label class="item item-input">
+                        <input type="password" placeholder="{{login.lan.pwd}}" ng-model="pwd">
+                    </label>
+                    <button class="button button-block button-assertive" on-tap="submit()">
+                        {{login.lan.submit}}
+                    </button>
+                </div>
+                <div class="text-center" style="margin: 40px 0;">
+                    <label class="assertive">{{login.lan.syshelp}}</label>
+                </div>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>
